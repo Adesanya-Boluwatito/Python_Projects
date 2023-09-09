@@ -36,7 +36,6 @@ def flip():
 
 def is_known():
     my_list.remove(current_card)
-    print(len(my_list))
     data = pandas.DataFrame(my_list)
     data.to_csv("data/words_to_learn.csv", index=False)
 
